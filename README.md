@@ -3,3 +3,9 @@
   - [week02](https://github.com/skn11-algorithm/week02), [week03](https://github.com/skn11-algorithm/week03), [week05](https://github.com/skn11-algorithm/week05) 문제 다시 풀기
 - [DP 개념](https://chaendev.tistory.com/16)
   - [문제집](https://www.acmicpc.net/workbook/view/3474)
+  - [2579번 계단 오르기]](https://www.acmicpc.net/problem/2579) (실버 3) (유빈)
+  - [9905번1, 2, 3 더하기]](https://www.acmicpc.net/problem/9905) (실버 3) (채은)
+  - [1149번 RGB거리 (실버 1)](https://www.acmicpc.net/problem/1149) (민정)
+  - [1932번 정수 삼각형 (실버 1)](https://www.acmicpc.net/problem/1932) (성일)
+  - [9251번 LCS (골드 5)](https://www.acmicpc.net/problem/9251) (정현)
+  - [2133번 타일 채우기 (골드4)](https://www.acmicpc.net/problem/2133) (유경)
