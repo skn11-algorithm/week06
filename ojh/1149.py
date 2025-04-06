@@ -3,17 +3,15 @@ import sys
 input=sys.stdin.readline
 
 n=int(input())
-dp=[0]*1001
+rgb=[list(map(int,input().rstrip().split())) for _ in range(n)]
 
-nums=list(map(int,input().rstrip().split()))
-dp[1]=min(nums)
-idx=nums.index(min(nums))
+dp=[[0,0,0] for _ in range(n)]
+dp[0]=rgb[0]
 
-for i in range(2,n+1):
-    nums=list(map(int,input().rstrip().split()))
-    candidates=[(nums[j],j) for j in range(3) if j!=idx]
-    val,new_idx=min(candidates)
-    dp[i]=dp[i-1]+val
-    idx=new_idx
+for i in range(1,n):
+    # 각 경우(색상)를 다 고려해서 최솟값을 유지
+    dp[i][0]=rgb[i][0]+min(dp[i-1][1],dp[i-1][2])
+    dp[i][1]=rgb[i][1]+min(dp[i-1][0],dp[i-1][2])
+    dp[i][2]=rgb[i][2]+min(dp[i-1][0],dp[i-1][1])
 
-print(dp[n])
+print(min(dp[n-1]))
